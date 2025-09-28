@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio – ZLancer</title>
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container py-3">
+    <!-- Header -->
+    <div class="d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center gap-2 brand">
+        <i class="bi bi-rocket-takeoff-fill"></i>
+        <span class="fs-4">ZLANCER</span>
+      </div>
+      <ul class="nav main-nav gap-1">
+        <li class="nav-item"><a class="nav-link" href="../index.html"><i class="bi bi-house-door"></i> TRANG CHỦ</a></li>
+        <li class="nav-item"><a class="nav-link" href="../frlance-news.html"><i class="bi bi-lightbulb"></i> FRLANCE‑NEWS</a></li>
+        <li class="nav-item"><a class="nav-link" href="../categories.html"><i class="bi bi-grid-3x3-gap"></i> THỂ LOẠI</a></li>
+        <li class="nav-item"><a class="nav-link" href="../recruitment.html"><i class="bi bi-megaphone"></i> BẢNG TUYỂN DỤNG</a></li>
+        <li class="nav-item"><a class="nav-link" href="../community.html"><i class="bi bi-globe2"></i> CỘNG ĐỒNG</a></li>
+        <li class="nav-item"><a class="nav-link active" href="../account.html"><i class="bi bi-person-circle"></i> TÀI KHOẢN</a></li>
+      </ul>
+    </div>
+    <hr class="divider mt-3 mb-4">
+
+    <!-- Main Content -->
+    <div class="row g-4">
+      <!-- Sidebar -->
+      <div class="col-lg-3">
+        <div class="card border-0 rounded-16 shadow-sm">
+          <div class="card-body p-4">
+            <div class="text-center mb-4">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop" 
+                   alt="Profile picture" 
+                   class="rounded-circle mb-3" 
+                   width="100" 
+                   height="100">
+              <h5 class="mb-1">Nguyễn Văn A</h5>
+              <p class="text-muted mb-0">UI/UX Designer</p>
+            </div>
+            <div class="list-group list-group-flush">
+              <a href="../account.html" class="list-group-item list-group-item-action">
+                <i class="bi bi-person me-2"></i> Hồ sơ
+              </a>
+              <a href="portfolio.html" class="list-group-item list-group-item-action active">
+                <i class="bi bi-collection me-2"></i> Portfolio
+              </a>
+              <a href="jobs.html" class="list-group-item list-group-item-action">
+                <i class="bi bi-briefcase me-2"></i> Công việc
+              </a>
+              <a href="payments.html" class="list-group-item list-group-item-action">
+                <i class="bi bi-wallet2 me-2"></i> Thanh toán
+              </a>
+              <a href="settings.html" class="list-group-item list-group-item-action">
+                <i class="bi bi-gear me-2"></i> Cài đặt
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Content -->
+      <div class="col-lg-9">
+        <div class="card border-0 rounded-16 shadow-sm">
+          <div class="card-body p-4">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h4 class="mb-0">Portfolio</h4>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProjectModal">
+                <i class="bi bi-plus-lg"></i> Thêm dự án
+              </button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="row g-4">
+              <!-- Project Card 1 -->
+              <div class="col-md-6">
+                <div class="card border-0 rounded-16 shadow-sm h-100">
+                  <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=800&auto=format&fit=crop" 
+                       class="card-img-top" alt="Project image"
+                       style="height: 200px; object-fit: cover;">
+                  <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <h5 class="card-title mb-0">App du lịch Travel Go</h5>
+                      <span class="badge bg-primary">UI/UX Design</span>
+                    </div>
+                    <p class="card-text text-muted">Thiết kế giao diện ứng dụng di động đặt tour du lịch với trải nghiệm người dùng tối ưu.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-primary btn-sm">Chi tiết</a>
+                        <a href="#" class="btn btn-outline-secondary btn-sm">Live Demo</a>
+                      </div>
+                      <small class="text-muted">2025</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Card 2 -->
+              <div class="col-md-6">
+                <div class="card border-0 rounded-16 shadow-sm h-100">
+                  <img src="https://images.unsplash.com/photo-1508615039623-a25605d2b022?q=80&w=800&auto=format&fit=crop" 
+                       class="card-img-top" alt="Project image"
+                       style="height: 200px; object-fit: cover;">
+                  <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <h5 class="card-title mb-0">Fashion Brand Website</h5>
+                      <span class="badge bg-info">Web Design</span>
+                    </div>
+                    <p class="card-text text-muted">Thiết kế website thương hiệu thời trang cao cấp với giao diện sang trọng, hiện đại.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-primary btn-sm">Chi tiết</a>
+                        <a href="#" class="btn btn-outline-secondary btn-sm">Live Demo</a>
+                      </div>
+                      <small class="text-muted">2025</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Card 3 -->
+              <div class="col-md-6">
+                <div class="card border-0 rounded-16 shadow-sm h-100">
+                  <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?q=80&w=800&auto=format&fit=crop" 
+                       class="card-img-top" alt="Project image"
+                       style="height: 200px; object-fit: cover;">
+                  <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <h5 class="card-title mb-0">Food Delivery App</h5>
+                      <span class="badge bg-success">Mobile App</span>
+                    </div>
+                    <p class="card-text text-muted">Thiết kế ứng dụng đặt đồ ăn với trải nghiệm đơn giản, dễ sử dụng.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-primary btn-sm">Chi tiết</a>
+                        <a href="#" class="btn btn-outline-secondary btn-sm">Live Demo</a>
+                      </div>
+                      <small class="text-muted">2024</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Card 4 -->
+              <div class="col-md-6">
+                <div class="card border-0 rounded-16 shadow-sm h-100">
+                  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" 
+                       class="card-img-top" alt="Project image"
+                       style="height: 200px; object-fit: cover;">
+                  <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <h5 class="card-title mb-0">Finance Dashboard</h5>
+                      <span class="badge bg-warning text-dark">Dashboard</span>
+                    </div>
+                    <p class="card-text text-muted">Thiết kế giao diện dashboard quản lý tài chính với nhiều biểu đồ trực quan.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-primary btn-sm">Chi tiết</a>
+                        <a href="#" class="btn btn-outline-secondary btn-sm">Live Demo</a>
+                      </div>
+                      <small class="text-muted">2024</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Project Modal -->
+  <div class="modal fade" id="addProjectModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content rounded-16">
+        <div class="modal-header">
+          <h5 class="modal-title">Thêm dự án mới</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Tên dự án</label>
+              <input type="text" class="form-control" placeholder="Nhập tên dự án">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Loại dự án</label>
+              <select class="form-select">
+                <option>UI/UX Design</option>
+                <option>Web Design</option>
+                <option>Mobile App</option>
+                <option>Dashboard</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Mô tả</label>
+              <textarea class="form-control" rows="3" placeholder="Mô tả chi tiết về dự án"></textarea>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Hình ảnh</label>
+              <input type="file" class="form-control">
+            </div>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Năm thực hiện</label>
+                <input type="number" class="form-control" placeholder="2025">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Demo URL</label>
+                <input type="url" class="form-control" placeholder="https://...">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+          <button type="button" class="btn btn-primary">Lưu dự án</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
