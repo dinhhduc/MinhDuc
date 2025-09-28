@@ -1,4 +1,165 @@
 
+     /* Nhẹ nhàng giống ảnh mẫu */
+  .zl-hero {
+    background: linear-gradient(90deg,#bde8ff 0%, #d8e7ff 50%, #ffe9f2 100%);
+    border-radius: 16px;
+  }
+  .zl-chip { border-radius: 999px; }
+  .card-img-overlay-gradient::before{
+    content:""; position:absolute; inset:0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.55));
+    border-radius: inherit;
+  }
+  .img-cover{object-fit:cover; height:220px;}
+
+  /* Finance cards hover effects */
+  .finance-card {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .finance-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2) !important;
+  }
+
+  .finance-card .card-img-overlay-gradient {
+    transition: all 0.3s ease;
+  }
+
+  .finance-card:hover .card-img-overlay-gradient::before {
+    background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.8));
+  }
+
+  .finance-card img {
+    transition: all 0.5s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .finance-card:hover img {
+    transform: scale(1.1);
+    filter: saturate(120%);
+  }
+
+  .finance-card .card-img-overlay {
+    transition: all 0.3s ease;
+    background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.7));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .finance-card:hover .card-img-overlay {
+    padding-bottom: 2rem;
+    background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.8));
+  }
+
+  .finance-card h6 {
+    transition: all 0.3s ease;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+  }
+
+  .finance-card:hover h6 {
+    transform: scale(1.05);
+    color: var(--pink-2);
+  }
+
+  .finance-card p {
+    transition: all 0.3s ease;
+    opacity: 0.8;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .finance-card:hover p {
+    opacity: 1;
+  }
+
+  .finance-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(180deg, transparent, rgba(0,0,0,0.8));
+    transition: all 0.3s ease;
+    opacity: 0;
+  }
+
+  .finance-card:hover::after {
+    opacity: 1;
+    height: 50%;
+  }
+
+  .section-title{
+    display:flex; align-items:center; gap:.5rem; font-weight:700; letter-spacing:.2px;
+  }
+  .section-title::before{
+    content:""; width:64px; height:6px; border-radius:4px; background:linear-gradient(90deg,#ff7adf,#8fd3ff);
+  }
+
+  /* Blog cards hover effects */
+  .blog-card {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15) !important;
+  }
+
+  .blog-card .img-cover {
+    transition: all 0.5s ease;
+  }
+
+  .blog-card:hover .img-cover {
+    transform: scale(1.05);
+    filter: brightness(105%) saturate(110%);
+  }
+
+  .blog-card .card-body {
+    transition: all 0.3s ease;
+    background: #fff;
+    position: relative;
+  }
+
+  .blog-card:hover .card-body {
+    background: linear-gradient(to right, #fff, var(--blue-2));
+  }
+
+  .blog-card .card-title {
+    transition: all 0.3s ease;
+    color: var(--text);
+  }
+
+  .blog-card:hover .card-title {
+    color: var(--indigo);
+    transform: translateX(8px);
+  }
+
+  .blog-card .card-text {
+    transition: all 0.3s ease;
+  }
+
+  .blog-card:hover .card-text {
+    transform: translateX(8px);
+    color: var(--text) !important;
+    opacity: 0.8;
+  }
+  /* Giữ ảnh đẹp khi random */
+  .rounded-16{border-radius:16px;}
     :root{
       --pink:#ff6fb1;
       --pink-2:#ffa6cf;
